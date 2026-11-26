@@ -27,3 +27,24 @@ instance/
 
 .DS_Store
 *.tsbuildinfo
+
+# Secrets: any .env file except the template
+.env*
+!.env.example
+*.pem
+*.key
+
+# Local databases, data exports and recordings (never commit real business data)
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.csv
+*.xlsx
+*.xls
+exports/
+*.mp4
+*.mov
+*.webm
+*.m4a
+*.wav
